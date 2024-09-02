@@ -21,7 +21,7 @@ class PessoaFisica extends Pessoa{
         if(this.cpf.length === 14){
             return this.cpf
         }else{
-            return "CPF inválido";
+            throw new Error("Cpf Inválido");
         }
     }
 
@@ -41,7 +41,7 @@ class PessoaJuridica extends Pessoa{
         if(this.cnpj.length === 18){
             return this.cnpj
         }else{
-            return "CNPJ inválido";
+            throw new Error("CNPJ inválido");
         }
     }
 
